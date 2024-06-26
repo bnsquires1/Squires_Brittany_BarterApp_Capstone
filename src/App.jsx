@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 // import {BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Shop } from './pages/Shop';
 import LikeButton from './components/LikeButton/LikeButton';
 import { ThemeProvider } from './context/ThemeContext'
 import ThemeToggle from './components/ThemeToggle';

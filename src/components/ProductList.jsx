@@ -1,10 +1,12 @@
+import ProductCard from "./ProductCard"
+
 export default function ProductList ({products}) {
     return (
         <ul className="ProductList">
             {
                 products.length ?
                 products.map((p) => {
-                    return <p>{p.product}</p>
+                    return <ProductCard key={p._id} product={p}/>;
                 })
 
                 :
