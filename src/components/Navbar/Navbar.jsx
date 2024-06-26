@@ -14,8 +14,7 @@ const Navbar = () => {
         <li>
           Shop <hr />
         </li>
-        <li
-          onClick={() => {
+        <li onClick={() => {
             setMenu("The 1st Note");
           }}
         >
@@ -47,7 +46,7 @@ const Navbar = () => {
             setMenu("Nia's Sanctuary");
           }}
         >
-          Nias Sanctuary{menu === "Nias Sanctuary" ? <hr /> : <></>}
+          Nias Sanctuary{menu === "Nia's Sanctuary" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
