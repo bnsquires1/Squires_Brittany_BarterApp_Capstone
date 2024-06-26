@@ -14,7 +14,8 @@ export default function ProductList({ products, setProducts, baseUrl }) {
 
       const filtered = products.filter((b) => b._id !== data.id);
 
-      setProducts(filtered);
+      
+    //   setProducts(filtered);
     } catch (err) {
       console.log(err);
     }
