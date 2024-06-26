@@ -19,7 +19,7 @@ import ProductList from './components/ProductList';
         try {
           const response = await fetch(`${baseUrl}/products/allproducts`)
 
-          if(response.status !==200) {
+          if(response.status !== 200) {
             return
           }
           const data = await response.json()
@@ -47,7 +47,11 @@ import ProductList from './components/ProductList';
       baseUrl={baseUrl}
       />
 
-      <ProductList products={products} />
+      <ProductList 
+      products={products} 
+      setProducts={setProducts}
+      baseUrl={baseUrl}
+      />
         {/* <Routes> */}
           {/* <Route path='/' element= {<Shop/>}/> */}
      

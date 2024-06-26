@@ -48,6 +48,7 @@ export default function NewForm ({ products, setProducts, baseUrl}) {
 
     return (
         <form onSubmit={handleSubmit} className="NewForm">
+            <h1>Create Product</h1>
             Company: <input type="text" ref={nameRef} />
             <br />
             Product/Service: <input type="text" ref={productRef} />
